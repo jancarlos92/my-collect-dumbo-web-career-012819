@@ -5,6 +5,6 @@ def my_collect(array)
    new_lang = []
    array.each do |name| new_lang << name.upcase!
 end
-yield new_lang
+yield if block_given?
 end
 end
